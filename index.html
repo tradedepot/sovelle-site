@@ -34,6 +34,11 @@
     .card-hover { transition: all 0.3s ease; }
     .card-hover:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
     .parallax-hero { background-attachment: fixed; background-size: cover; background-position: center; }
+    /* Prevent anchor jumps from hiding under the sticky header */
+    section { scroll-margin-top: 84px; }            /* mobile header height */
+    @media (min-width: 1024px) {
+    section { scroll-margin-top: 96px; }          /* desktop header height */
+    }
   </style>
   <script>
     tailwind.config = {
@@ -66,7 +71,7 @@
   </div>
 
   <!-- Header -->
-  <header id="header" class="fixed top-0 left-0 right-0 z-40 glassmorphism border-b border-olive/10">
+  <header id="header" class="sticky top-0 z-40 glassmorphism border-b border-olive/10">
     <div class="max-w-7xl mx-auto px-6 py-4">
       <div class="flex items-center justify-between">
         <div class="flex items-center">
@@ -88,7 +93,7 @@
   </header>
 
   <!-- Hero -->
-  <section id="hero" class="relative h-[800px] parallax-hero overflow-hidden">
+  <section id="hero" class="relative h-[800px] parallax-hero overflow-hidden pt-6 sm:pt-0">
     <img class="absolute inset-0 w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/d2ad0c387d-08ceb4bc26370d673266.png" alt="industrial textile manufacturing close-up weaving loom in motion, knit frames, fabric textures, modern factory setting, cinematic lighting" />
     <div class="absolute inset-0 bg-gradient-to-r from-off-black/60 to-off-black/30"></div>
     <div class="pattern-overlay absolute inset-0"></div>
