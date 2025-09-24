@@ -2,26 +2,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Threads by Sovelle - Premium African Cotton Linens</title>
-    <!-- Favicon: small “t.” badge -->
-    <link rel="icon" type="image/svg+xml"
-    href='data:image/svg+xml;utf8,
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-    <rect width="64" height="64" rx="12" fill="%231E5F4F"/>
-    <text x="18" y="44" font-size="36" font-family="Inter, Arial, sans-serif" fill="%23F2F0EF">t.</text>
-    </svg>'/>
-
-    <!-- Meta / Open Graph / Twitter -->
-    <meta name="description" content="Threads by Sovelle — premium bed linen & towels crafted from African cotton. Hotel-calibre comfort, sustainably made in Benin." />
-    <link rel="canonical" href="https://threads.example.com/"><!-- replace with your domain -->
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Threads by Sovelle">
-    <meta property="og:title" content="Threads by Sovelle — Premium African Cotton Linens">
-    <meta property="og:description" content="Hotel-calibre bedding and towels, sustainably crafted in Benin.">
-    <meta property="og:image" content="https://storage.googleapis.com/uxpilot-auth.appspot.com/81ff4c88e0-e381958f7a0c434ad8d9.png">
-    <meta property="og:image:width" content="1600">
-    <meta property="og:image:height" content="900">
-    <meta name="twitter:card" content="summary_large_image">
-
     <script src="https://cdn.tailwindcss.com"></script>
     <script>window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -36,10 +16,6 @@
         .product-hover:hover { transform: translateY(-8px); }
         .hero-gradient { background: linear-gradient(135deg, #1E5F4F 0%, #2A7A66 100%); }
         .fabric-texture { background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><g fill="none" fill-rule="evenodd"><g fill="%23ffffff" fill-opacity="0.03"><circle cx="30" cy="30" r="2"/></g></svg>'); }
-        :root { --header-h: 80px; }            /* adjust if you change header height */
-        html { scroll-behavior: smooth; scroll-padding-top: var(--header-h); }
-        [id] { scroll-margin-top: calc(var(--header-h) + 8px); } /* ensures titles aren't hidden */
-        @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
     </style>
     <script>tailwind.config = {
   "theme": {
@@ -85,32 +61,20 @@
     <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <div class="flex items-center space-x-8">
             <div class="flex items-center">
-                <div class="text-2xl font-bold text-brand">Threads by Sovelle</div>
-                <span class="text-sm text-gray-500 ml-2">Premium Linens</span>
+                <div class="text-2xl font-bold text-brand">Threads</div>
+                <span class="text-lg text-gray-500 ml-1">by Sovelle</span>
             </div>
             <nav class="hidden md:flex items-center space-x-8">
-                <a href="#collections" class="text-gray-700 hover:text-brand transition-colors">Bedding</a>
-                <a href="#collections" class="text-gray-700 hover:text-brand transition-colors">Bath</a>
-                <a href="#product-showcase" class="text-gray-700 hover:text-brand transition-colors">Collections</a>
-                <a href="#cotton-story" class="text-gray-700 hover:text-brand transition-colors">Our Story</a>
+                <span class="text-gray-700 hover:text-brand transition-colors cursor-pointer">Bedding</span>
+                <span class="text-gray-700 hover:text-brand transition-colors cursor-pointer">Bath</span>
+                <span class="text-gray-700 hover:text-brand transition-colors cursor-pointer">Collections</span>
+                <span class="text-gray-700 hover:text-brand transition-colors cursor-pointer">Our Story</span>
             </nav>
         </div>
         <div class="flex items-center space-x-4">
-            <div class="hidden md:flex items-center space-x-3 text-gray-600">
-                <span class="hover:text-brand transition-colors cursor-pointer">
-                    <i class="fa-solid fa-search"></i>
-                </span>
-                <span class="hover:text-brand transition-colors cursor-pointer">
-                    <i class="fa-solid fa-heart"></i>
-                </span>
-                <span class="hover:text-brand transition-colors cursor-pointer relative">
-                    <i class="fa-solid fa-shopping-bag"></i>
-                    <span class="absolute -top-2 -right-2 bg-brand text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">3</span>
-                </span>
-            </div>
-            <a href="index.html" class="text-sm text-gray-600 hover:text-brand transition-colors cursor-pointer">
-                ← A Sovelle Brand
-            </a>
+            <span class="text-sm text-gray-600 hover:text-brand transition-colors cursor-pointer">
+                ← The Sovelle Family
+            </span>
         </div>
     </div>
 </header>
@@ -132,12 +96,12 @@
                     Experience the exceptional softness and durability of Benin cotton, transformed into beautiful bed linens and bath essentials for discerning homes.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="#collections" class="bg-white text-brand px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors">
-                      Shop Collection
-                    </a>
-                    <a href="#cotton-story" class="border-2 border-white text-white hover:bg-white hover:text-brand px-8 py-4 rounded-lg font-semibold text-lg transition-colors">
-                      Learn Our Story
-                    </a>
+                    <button class="bg-white text-brand px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors">
+                        Explore Collection
+                    </button>
+                    <button class="border-2 border-white text-white hover:bg-white hover:text-brand px-8 py-4 rounded-lg font-semibold text-lg transition-colors">
+                        Learn Our Story
+                    </button>
                 </div>
             </div>
             <div class="relative">
@@ -173,19 +137,16 @@
                 <div class="p-8">
                     <h3 class="text-2xl font-semibold mb-3">Essential Bedding</h3>
                     <p class="text-gray-600 mb-6">Pure cotton sheets, duvet covers, and pillowcases crafted for ultimate comfort and breathability.</p>
-                    <div class="flex justify-between items-center mb-4">
-                        <span class="text-2xl font-bold text-brand">From $149</span>
-                        <div class="flex text-yellow-400">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <span class="text-gray-600 ml-2">(127 reviews)</span>
-                        </div>
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span class="text-gray-600 ml-2">(127 reviews)</span>
                     </div>
                     <button class="w-full bg-brand hover:bg-brand-light text-white py-3 rounded-lg font-medium transition-colors">
-                        Shop Bedding
+                        Explore Collection
                     </button>
                 </div>
             </div>
@@ -200,19 +161,16 @@
                 <div class="p-8">
                     <h3 class="text-2xl font-semibold mb-3">Bath Essentials</h3>
                     <p class="text-gray-600 mb-6">Plush towels and bath linens that combine exceptional absorbency with lasting softness.</p>
-                    <div class="flex justify-between items-center mb-4">
-                        <span class="text-2xl font-bold text-brand">From $89</span>
-                        <div class="flex text-yellow-400">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <span class="text-gray-600 ml-2">(89 reviews)</span>
-                        </div>
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span class="text-gray-600 ml-2">(89 reviews)</span>
                     </div>
                     <button class="w-full bg-brand hover:bg-brand-light text-white py-3 rounded-lg font-medium transition-colors">
-                        Shop Bath
+                        Explore Collection
                     </button>
                 </div>
             </div>
@@ -227,19 +185,16 @@
                 <div class="p-8">
                     <h3 class="text-2xl font-semibold mb-3">Home Accents</h3>
                     <p class="text-gray-600 mb-6">Decorative pieces that bring the warmth and elegance of African cotton throughout your home.</p>
-                    <div class="flex justify-between items-center mb-4">
-                        <span class="text-2xl font-bold text-brand">From $39</span>
-                        <div class="flex text-yellow-400">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <span class="text-gray-600 ml-2">(64 reviews)</span>
-                        </div>
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span class="text-gray-600 ml-2">(64 reviews)</span>
                     </div>
                     <button class="w-full bg-brand hover:bg-brand-light text-white py-3 rounded-lg font-medium transition-colors">
-                        Shop Accents
+                        Explore Collection
                     </button>
                 </div>
             </div>
@@ -261,12 +216,6 @@
                 </div>
                 <h3 class="text-lg font-semibold mb-2">Classic Sheet Sets</h3>
                 <p class="text-gray-600 text-sm mb-3">Percale &amp; Sateen Weaves</p>
-                <div class="flex justify-between items-center">
-                    <span class="text-xl font-bold text-brand">$149-229</span>
-                    <button class="text-brand hover:text-brand-light">
-                        <i class="fa-solid fa-plus"></i>
-                    </button>
-                </div>
             </div>
 
             <div class="group cursor-pointer">
@@ -275,12 +224,6 @@
                 </div>
                 <h3 class="text-lg font-semibold mb-2">Duvet Covers</h3>
                 <p class="text-gray-600 text-sm mb-3">Button &amp; Zipper Closure</p>
-                <div class="flex justify-between items-center">
-                    <span class="text-xl font-bold text-brand">$189-279</span>
-                    <button class="text-brand hover:text-brand-light">
-                        <i class="fa-solid fa-plus"></i>
-                    </button>
-                </div>
             </div>
 
             <div class="group cursor-pointer">
@@ -289,12 +232,6 @@
                 </div>
                 <h3 class="text-lg font-semibold mb-2">Bath Towel Sets</h3>
                 <p class="text-gray-600 text-sm mb-3">6-Piece Complete Sets</p>
-                <div class="flex justify-between items-center">
-                    <span class="text-xl font-bold text-brand">$129-199</span>
-                    <button class="text-brand hover:text-brand-light">
-                        <i class="fa-solid fa-plus"></i>
-                    </button>
-                </div>
             </div>
 
             <div class="group cursor-pointer">
@@ -303,12 +240,6 @@
                 </div>
                 <h3 class="text-lg font-semibold mb-2">Decorative Pillows</h3>
                 <p class="text-gray-600 text-sm mb-3">Various Sizes &amp; Patterns</p>
-                <div class="flex justify-between items-center">
-                    <span class="text-xl font-bold text-brand">$39-89</span>
-                    <button class="text-brand hover:text-brand-light">
-                        <i class="fa-solid fa-plus"></i>
-                    </button>
-                </div>
             </div>
 
             <div class="group cursor-pointer">
@@ -317,12 +248,6 @@
                 </div>
                 <h3 class="text-lg font-semibold mb-2">Table Linens</h3>
                 <p class="text-gray-600 text-sm mb-3">Runners &amp; Placemats</p>
-                <div class="flex justify-between items-center">
-                    <span class="text-xl font-bold text-brand">$49-119</span>
-                    <button class="text-brand hover:text-brand-light">
-                        <i class="fa-solid fa-plus"></i>
-                    </button>
-                </div>
             </div>
 
             <div class="group cursor-pointer">
@@ -331,12 +256,6 @@
                 </div>
                 <h3 class="text-lg font-semibold mb-2">Bathrobes</h3>
                 <p class="text-gray-600 text-sm mb-3">Terry &amp; Waffle Weave</p>
-                <div class="flex justify-between items-center">
-                    <span class="text-xl font-bold text-brand">$89-149</span>
-                    <button class="text-brand hover:text-brand-light">
-                        <i class="fa-solid fa-plus"></i>
-                    </button>
-                </div>
             </div>
 
             <div class="group cursor-pointer">
@@ -345,12 +264,6 @@
                 </div>
                 <h3 class="text-lg font-semibold mb-2">Throw Blankets</h3>
                 <p class="text-gray-600 text-sm mb-3">Lightweight &amp; Cozy</p>
-                <div class="flex justify-between items-center">
-                    <span class="text-xl font-bold text-brand">$69-129</span>
-                    <button class="text-brand hover:text-brand-light">
-                        <i class="fa-solid fa-plus"></i>
-                    </button>
-                </div>
             </div>
 
             <div class="group cursor-pointer">
@@ -359,12 +272,6 @@
                 </div>
                 <h3 class="text-lg font-semibold mb-2">Window Treatments</h3>
                 <p class="text-gray-600 text-sm mb-3">Curtains &amp; Panels</p>
-                <div class="flex justify-between items-center">
-                    <span class="text-xl font-bold text-brand">$99-199</span>
-                    <button class="text-brand hover:text-brand-light">
-                        <i class="fa-solid fa-plus"></i>
-                    </button>
-                </div>
             </div>
         </div>
     </div>
@@ -806,7 +713,7 @@
                     <li><span class="hover:text-white transition-colors cursor-pointer">Sustainability</span></li>
                     <li><span class="hover:text-white transition-colors cursor-pointer">Reviews</span></li>
                     <li><span class="hover:text-white transition-colors cursor-pointer">Careers</span></li>
-                    <li><span class="hover:text-white transition-colors cursor-pointer">A Sovelle Brand</span></li>
+                    <li><span class="hover:text-white transition-colors cursor-pointer">B2B Cotton Trading</span></li>
                 </ul>
             </div>
         </div>
@@ -933,19 +840,6 @@ function addToCart(productName, price) {
     }, 2000);
 }
 </script>
-<script defer>
-    // Lazy-load all non-hero images
-    document.querySelectorAll('img').forEach((img) => {
-      if (!img.closest('#hero')) img.loading = 'lazy';
-    });
-    // Give the hero image high priority
-    const heroImg = document.querySelector('#hero img');
-    if (heroImg) heroImg.setAttribute('fetchpriority','high');
-  
-    // Close quick view on ESC
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') document.getElementById('quick-view-modal')?.classList.add('hidden');
-    });
-  </script>
+
 
 </body></html>
