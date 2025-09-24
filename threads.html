@@ -1,0 +1,951 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Threads by Sovelle - Premium African Cotton Linens</title>
+    <!-- Favicon: small “t.” badge -->
+    <link rel="icon" type="image/svg+xml"
+    href='data:image/svg+xml;utf8,
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+    <rect width="64" height="64" rx="12" fill="%231E5F4F"/>
+    <text x="18" y="44" font-size="36" font-family="Inter, Arial, sans-serif" fill="%23F2F0EF">t.</text>
+    </svg>'/>
+
+    <!-- Meta / Open Graph / Twitter -->
+    <meta name="description" content="Threads by Sovelle — premium bed linen & towels crafted from African cotton. Hotel-calibre comfort, sustainably made in Benin." />
+    <link rel="canonical" href="https://threads.example.com/"><!-- replace with your domain -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Threads by Sovelle">
+    <meta property="og:title" content="Threads by Sovelle — Premium African Cotton Linens">
+    <meta property="og:description" content="Hotel-calibre bedding and towels, sustainably crafted in Benin.">
+    <meta property="og:image" content="https://storage.googleapis.com/uxpilot-auth.appspot.com/81ff4c88e0-e381958f7a0c434ad8d9.png">
+    <meta property="og:image:width" content="1600">
+    <meta property="og:image:height" content="900">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    
+    <style>
+        ::-webkit-scrollbar { display: none; }
+        body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+        .modal-backdrop { backdrop-filter: blur(4px); }
+        .product-hover { transition: all 0.3s ease; }
+        .product-hover:hover { transform: translateY(-8px); }
+        .hero-gradient { background: linear-gradient(135deg, #1E5F4F 0%, #2A7A66 100%); }
+        .fabric-texture { background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><g fill="none" fill-rule="evenodd"><g fill="%23ffffff" fill-opacity="0.03"><circle cx="30" cy="30" r="2"/></g></svg>'); }
+        :root { --header-h: 80px; }            /* adjust if you change header height */
+        html { scroll-behavior: smooth; scroll-padding-top: var(--header-h); }
+        [id] { scroll-margin-top: calc(var(--header-h) + 8px); } /* ensures titles aren't hidden */
+        @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    </style>
+    <script>tailwind.config = {
+  "theme": {
+    "extend": {
+      "colors": {
+        "brand": "#1E5F4F",
+        "brand-light": "#2A7A66",
+        "success": "#1A7F37",
+        "error": "#B42318",
+        "surface": "#F4F4F5",
+        "surface-dark": "#E7E7EA",
+        "cotton": "#F8F6F0",
+        "linen": "#E8E2D4"
+      },
+      "fontFamily": {}
+    }
+  }
+};</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"><style>
+  .highlighted-section {
+    outline: 2px solid #3F20FB;
+    background-color: rgba(63, 32, 251, 0.1);
+  }
+
+  .edit-button {
+    position: absolute;
+    z-index: 1000;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  html, body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  </style></head>
+<body class="bg-white text-gray-900 antialiased">
+
+<!-- Header -->
+<header id="header" class="sticky top-0 bg-white border-b border-gray-200 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div class="flex items-center space-x-8">
+            <div class="flex items-center">
+                <div class="text-2xl font-bold text-brand">Threads by Sovelle</div>
+                <span class="text-sm text-gray-500 ml-2">Premium Linens</span>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#collections" class="text-gray-700 hover:text-brand transition-colors">Bedding</a>
+                <a href="#collections" class="text-gray-700 hover:text-brand transition-colors">Bath</a>
+                <a href="#product-showcase" class="text-gray-700 hover:text-brand transition-colors">Collections</a>
+                <a href="#cotton-story" class="text-gray-700 hover:text-brand transition-colors">Our Story</a>
+            </nav>
+        </div>
+        <div class="flex items-center space-x-4">
+            <div class="hidden md:flex items-center space-x-3 text-gray-600">
+                <span class="hover:text-brand transition-colors cursor-pointer">
+                    <i class="fa-solid fa-search"></i>
+                </span>
+                <span class="hover:text-brand transition-colors cursor-pointer">
+                    <i class="fa-solid fa-heart"></i>
+                </span>
+                <span class="hover:text-brand transition-colors cursor-pointer relative">
+                    <i class="fa-solid fa-shopping-bag"></i>
+                    <span class="absolute -top-2 -right-2 bg-brand text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">3</span>
+                </span>
+            </div>
+            <a href="index.html" class="text-sm text-gray-600 hover:text-brand transition-colors cursor-pointer">
+                ← A Sovelle Brand
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section id="hero" class="relative py-20 text-white overflow-hidden h-[600px]">
+    <div class="absolute inset-0 bg-gradient-to-br from-brand via-brand-light to-brand"></div>
+    <div class="absolute inset-0 fabric-texture"></div>
+    <div class="relative max-w-7xl mx-auto px-6 h-full flex items-center">
+        <div class="grid lg:grid-cols-2 gap-12 items-center w-full">
+            <div>
+                <div class="inline-block bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium mb-6">
+                    From Field to Home
+                </div>
+                <h1 class="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                    Luxurious linens crafted from premium African cotton
+                </h1>
+                <p class="text-xl text-white/90 mb-8 leading-relaxed">
+                    Experience the exceptional softness and durability of Benin cotton, transformed into beautiful bed linens and bath essentials for discerning homes.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#collections" class="bg-white text-brand px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors">
+                      Shop Collection
+                    </a>
+                    <a href="#cotton-story" class="border-2 border-white text-white hover:bg-white hover:text-brand px-8 py-4 rounded-lg font-semibold text-lg transition-colors">
+                      Learn Our Story
+                    </a>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="aspect-square bg-white/10 backdrop-blur-sm rounded-3xl p-8 flex items-center justify-center">
+                    <img class="w-full h-full object-cover rounded-2xl" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/81ff4c88e0-e381958f7a0c434ad8d9.png" alt="luxury white cotton bed sheets on elegant bed with soft natural lighting, premium home decor, minimalist bedroom">
+                </div>
+                <div class="absolute -bottom-6 -right-6 bg-white text-brand p-4 rounded-2xl shadow-lg">
+                    <div class="text-2xl font-bold">100%</div>
+                    <div class="text-sm">African Cotton</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Collections -->
+<section id="collections" class="py-20 bg-cotton">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-900 mb-6">Featured Collections</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Each piece tells the story of African craftsmanship, from the cotton fields of Benin to your bedroom sanctuary.
+            </p>
+        </div>
+        <div class="grid lg:grid-cols-3 gap-8">
+            <div class="product-hover bg-white rounded-3xl overflow-hidden shadow-lg">
+                <div class="aspect-[4/3] relative">
+                    <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/12a5bcb36f-4220d632612884083930.png" alt="luxury white cotton bedding set with pillows and duvet cover, premium hotel style bedroom">
+                    <div class="absolute top-4 left-4 bg-brand text-white px-3 py-1 rounded-full text-sm font-medium">
+                        Bestseller
+                    </div>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-semibold mb-3">Essential Bedding</h3>
+                    <p class="text-gray-600 mb-6">Pure cotton sheets, duvet covers, and pillowcases crafted for ultimate comfort and breathability.</p>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-2xl font-bold text-brand">From $149</span>
+                        <div class="flex text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span class="text-gray-600 ml-2">(127 reviews)</span>
+                        </div>
+                    </div>
+                    <button class="w-full bg-brand hover:bg-brand-light text-white py-3 rounded-lg font-medium transition-colors">
+                        Shop Bedding
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-hover bg-white rounded-3xl overflow-hidden shadow-lg">
+                <div class="aspect-[4/3] relative">
+                    <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/34519b062b-e0bd59eab9546e82f812.png" alt="luxury cotton bath towels folded neatly in spa bathroom setting, premium hotel towels">
+                    <div class="absolute top-4 left-4 bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-medium">
+                        New
+                    </div>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-semibold mb-3">Bath Essentials</h3>
+                    <p class="text-gray-600 mb-6">Plush towels and bath linens that combine exceptional absorbency with lasting softness.</p>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-2xl font-bold text-brand">From $89</span>
+                        <div class="flex text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span class="text-gray-600 ml-2">(89 reviews)</span>
+                        </div>
+                    </div>
+                    <button class="w-full bg-brand hover:bg-brand-light text-white py-3 rounded-lg font-medium transition-colors">
+                        Shop Bath
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-hover bg-white rounded-3xl overflow-hidden shadow-lg">
+                <div class="aspect-[4/3] relative">
+                    <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/96157a45df-be10252d991ed3a19137.png" alt="luxury cotton home decor items, table runners, cushion covers, premium home textiles">
+                    <div class="absolute top-4 left-4 bg-purple-500 text-white px-3 py-1 rounded-full text-sm font-medium">
+                        Limited
+                    </div>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-semibold mb-3">Home Accents</h3>
+                    <p class="text-gray-600 mb-6">Decorative pieces that bring the warmth and elegance of African cotton throughout your home.</p>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-2xl font-bold text-brand">From $39</span>
+                        <div class="flex text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span class="text-gray-600 ml-2">(64 reviews)</span>
+                        </div>
+                    </div>
+                    <button class="w-full bg-brand hover:bg-brand-light text-white py-3 rounded-lg font-medium transition-colors">
+                        Shop Accents
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Product Showcase Grid -->
+<section id="product-showcase" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-900 mb-6">Complete Your Bedroom Sanctuary</h2>
+            <p class="text-xl text-gray-600">Discover our full range of premium cotton home textiles</p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="group cursor-pointer">
+                <div class="aspect-square bg-surface rounded-2xl overflow-hidden mb-4 group-hover:shadow-xl transition-shadow">
+                    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/ef64f9a020-250948b1bfcb567ba653.png" alt="white cotton bed sheets set with pillowcases on modern bed, luxury bedding">
+                </div>
+                <h3 class="text-lg font-semibold mb-2">Classic Sheet Sets</h3>
+                <p class="text-gray-600 text-sm mb-3">Percale &amp; Sateen Weaves</p>
+                <div class="flex justify-between items-center">
+                    <span class="text-xl font-bold text-brand">$149-229</span>
+                    <button class="text-brand hover:text-brand-light">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="group cursor-pointer">
+                <div class="aspect-square bg-surface rounded-2xl overflow-hidden mb-4 group-hover:shadow-xl transition-shadow">
+                    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/ac94397465-3a37f356f364290aeddc.png" alt="luxury cotton duvet cover on bed with decorative pillows, elegant bedroom styling">
+                </div>
+                <h3 class="text-lg font-semibold mb-2">Duvet Covers</h3>
+                <p class="text-gray-600 text-sm mb-3">Button &amp; Zipper Closure</p>
+                <div class="flex justify-between items-center">
+                    <span class="text-xl font-bold text-brand">$189-279</span>
+                    <button class="text-brand hover:text-brand-light">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="group cursor-pointer">
+                <div class="aspect-square bg-surface rounded-2xl overflow-hidden mb-4 group-hover:shadow-xl transition-shadow">
+                    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/fea62e1cae-b93f6f49ef5ea3bead72.png" alt="luxury cotton bath towels stacked in bathroom, spa quality towels">
+                </div>
+                <h3 class="text-lg font-semibold mb-2">Bath Towel Sets</h3>
+                <p class="text-gray-600 text-sm mb-3">6-Piece Complete Sets</p>
+                <div class="flex justify-between items-center">
+                    <span class="text-xl font-bold text-brand">$129-199</span>
+                    <button class="text-brand hover:text-brand-light">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="group cursor-pointer">
+                <div class="aspect-square bg-surface rounded-2xl overflow-hidden mb-4 group-hover:shadow-xl transition-shadow">
+                    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/79750c6208-ab3b47170842d963a7a6.png" alt="cotton throw pillows and cushions on sofa, home decor accessories">
+                </div>
+                <h3 class="text-lg font-semibold mb-2">Decorative Pillows</h3>
+                <p class="text-gray-600 text-sm mb-3">Various Sizes &amp; Patterns</p>
+                <div class="flex justify-between items-center">
+                    <span class="text-xl font-bold text-brand">$39-89</span>
+                    <button class="text-brand hover:text-brand-light">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="group cursor-pointer">
+                <div class="aspect-square bg-surface rounded-2xl overflow-hidden mb-4 group-hover:shadow-xl transition-shadow">
+                    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/088a3022de-71be5627b28addd279f0.png" alt="cotton table runner on dining table with elegant place setting">
+                </div>
+                <h3 class="text-lg font-semibold mb-2">Table Linens</h3>
+                <p class="text-gray-600 text-sm mb-3">Runners &amp; Placemats</p>
+                <div class="flex justify-between items-center">
+                    <span class="text-xl font-bold text-brand">$49-119</span>
+                    <button class="text-brand hover:text-brand-light">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="group cursor-pointer">
+                <div class="aspect-square bg-surface rounded-2xl overflow-hidden mb-4 group-hover:shadow-xl transition-shadow">
+                    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/75f5605744-dea8d3410e3d5bf68bf9.png" alt="luxury cotton bathrobes hanging in spa bathroom, premium hotel style robes">
+                </div>
+                <h3 class="text-lg font-semibold mb-2">Bathrobes</h3>
+                <p class="text-gray-600 text-sm mb-3">Terry &amp; Waffle Weave</p>
+                <div class="flex justify-between items-center">
+                    <span class="text-xl font-bold text-brand">$89-149</span>
+                    <button class="text-brand hover:text-brand-light">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="group cursor-pointer">
+                <div class="aspect-square bg-surface rounded-2xl overflow-hidden mb-4 group-hover:shadow-xl transition-shadow">
+                    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/316d896162-25db845427fbc3e4b0c9.png" alt="cotton throw blankets folded on chair, cozy home textiles">
+                </div>
+                <h3 class="text-lg font-semibold mb-2">Throw Blankets</h3>
+                <p class="text-gray-600 text-sm mb-3">Lightweight &amp; Cozy</p>
+                <div class="flex justify-between items-center">
+                    <span class="text-xl font-bold text-brand">$69-129</span>
+                    <button class="text-brand hover:text-brand-light">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="group cursor-pointer">
+                <div class="aspect-square bg-surface rounded-2xl overflow-hidden mb-4 group-hover:shadow-xl transition-shadow">
+                    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/276603bade-2f5728b84d25825df064.png" alt="cotton curtains in elegant living room, home window treatments">
+                </div>
+                <h3 class="text-lg font-semibold mb-2">Window Treatments</h3>
+                <p class="text-gray-600 text-sm mb-3">Curtains &amp; Panels</p>
+                <div class="flex justify-between items-center">
+                    <span class="text-xl font-bold text-brand">$99-199</span>
+                    <button class="text-brand hover:text-brand-light">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Cotton Story -->
+<section id="cotton-story" class="py-20 bg-linen">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <div class="inline-block bg-brand/10 text-brand px-4 py-2 rounded-full text-sm font-medium mb-6">
+                    From Benin to Your Home
+                </div>
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">The Journey of African Cotton Excellence</h2>
+                <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+                    Our cotton begins its journey in the fertile fields of Benin, where generations of farmers have perfected the art of cultivation. Each fiber is carefully selected for its exceptional length, strength, and softness—qualities that make Benin cotton among the world's finest.
+                </p>
+                <div class="grid grid-cols-2 gap-8 mb-8">
+                    <div>
+                        <div class="text-3xl font-bold text-brand mb-2">29.5mm</div>
+                        <div class="text-gray-600">Average Staple Length</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-brand mb-2">4.2</div>
+                        <div class="text-gray-600">Micronaire Rating</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-brand mb-2">32.1</div>
+                        <div class="text-gray-600">Strength (g/tex)</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-brand mb-2">&lt;1%</div>
+                        <div class="text-gray-600">Contamination</div>
+                    </div>
+                </div>
+                <button class="bg-brand hover:bg-brand-light text-white px-8 py-3 rounded-lg font-medium transition-colors">
+                    Learn More About Our Cotton
+                </button>
+            </div>
+            <div class="relative">
+                <div class="aspect-[4/3] bg-white rounded-3xl overflow-hidden shadow-xl">
+                    <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/90985d22f2-4cca7708a4d819775356.png" alt="cotton field in Benin Africa with farmers harvesting, sustainable agriculture, golden hour lighting">
+                </div>
+                <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-lg">
+                    <div class="text-2xl font-bold text-brand mb-2">Sustainably Grown</div>
+                    <div class="text-sm text-gray-600">Supporting local communities</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sustainability Promise -->
+<section id="sustainability" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-900 mb-6">Our Sustainability Promise</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Every purchase supports sustainable farming practices and fair trade partnerships across West Africa
+            </p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="text-center">
+                <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fa-solid fa-seedling text-green-600 text-3xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-4">Organic Farming</h3>
+                <p class="text-gray-600">Supporting pesticide-free cultivation methods that protect both soil health and farmer wellbeing.</p>
+            </div>
+            <div class="text-center">
+                <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fa-solid fa-droplet text-blue-600 text-3xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-4">Water Conservation</h3>
+                <p class="text-gray-600">Implementing efficient irrigation systems and rainwater harvesting to minimize water usage.</p>
+            </div>
+            <div class="text-center">
+                <div class="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fa-solid fa-handshake text-orange-600 text-3xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-4">Fair Trade</h3>
+                <p class="text-gray-600">Ensuring fair wages and working conditions for all farmers and workers in our supply chain.</p>
+            </div>
+            <div class="text-center">
+                <div class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fa-solid fa-recycle text-purple-600 text-3xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-4">Circular Design</h3>
+                <p class="text-gray-600">Creating durable products with minimal packaging that can be recycled or composted.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Customer Reviews -->
+<section id="reviews" class="py-20 bg-surface">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-900 mb-6">What Our Customers Say</h2>
+            <div class="flex justify-center items-center space-x-2 mb-4">
+                <div class="flex text-yellow-400">
+                    <i class="fa-solid fa-star text-2xl"></i>
+                    <i class="fa-solid fa-star text-2xl"></i>
+                    <i class="fa-solid fa-star text-2xl"></i>
+                    <i class="fa-solid fa-star text-2xl"></i>
+                    <i class="fa-solid fa-star text-2xl"></i>
+                </div>
+                <span class="text-xl font-semibold text-gray-900">4.9/5</span>
+                <span class="text-gray-600">(1,247 reviews)</span>
+            </div>
+        </div>
+        <div class="grid lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-2xl p-8 shadow-lg">
+                <div class="flex text-yellow-400 mb-4">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-gray-700 mb-6 leading-relaxed">
+                    "The quality is absolutely exceptional. These sheets feel like luxury hotel bedding but even softer. The cotton is so breathable and gets softer with every wash."
+                </p>
+                <div class="flex items-center">
+                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg" alt="Sarah M." class="w-12 h-12 rounded-full mr-4">
+                    <div>
+                        <div class="font-semibold">Sarah M.</div>
+                        <div class="text-sm text-gray-600">Verified Buyer</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl p-8 shadow-lg">
+                <div class="flex text-yellow-400 mb-4">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-gray-700 mb-6 leading-relaxed">
+                    "I love knowing that my purchase supports African farmers and sustainable practices. The towels are incredibly absorbent and maintain their fluffiness after multiple washes."
+                </p>
+                <div class="flex items-center">
+                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg" alt="Michael R." class="w-12 h-12 rounded-full mr-4">
+                    <div>
+                        <div class="font-semibold">Michael R.</div>
+                        <div class="text-sm text-gray-600">Verified Buyer</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl p-8 shadow-lg">
+                <div class="flex text-yellow-400 mb-4">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-gray-700 mb-6 leading-relaxed">
+                    "The attention to detail in the stitching and finishing is remarkable. These linens transform my bedroom into a five-star suite. Worth every penny."
+                </p>
+                <div class="flex items-center">
+                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-1.jpg" alt="Emma L." class="w-12 h-12 rounded-full mr-4">
+                    <div>
+                        <div class="font-semibold">Emma L.</div>
+                        <div class="text-sm text-gray-600">Verified Buyer</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Care Instructions -->
+<section id="care-guide" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Caring for Your Investment</h2>
+                <p class="text-lg text-gray-600 mb-8">
+                    With proper care, your Threads by Sovelle linens will become softer and more beautiful with age, lasting for years to come.
+                </p>
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <div class="w-10 h-10 bg-brand/10 rounded-full flex items-center justify-center mr-4 mt-1">
+                            <i class="fa-solid fa-tint text-brand"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold mb-2">Washing</h3>
+                            <p class="text-gray-600">Machine wash in cool water with gentle detergent. Avoid bleach and fabric softeners to preserve the natural cotton fibers.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-10 h-10 bg-brand/10 rounded-full flex items-center justify-center mr-4 mt-1">
+                            <i class="fa-solid fa-sun text-brand"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold mb-2">Drying</h3>
+                            <p class="text-gray-600">Tumble dry on low heat or line dry in shade. Remove while slightly damp for easier ironing and to prevent over-drying.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-10 h-10 bg-brand/10 rounded-full flex items-center justify-center mr-4 mt-1">
+                            <i class="fa-solid fa-iron text-brand"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold mb-2">Ironing</h3>
+                            <p class="text-gray-600">Iron on medium heat while slightly damp for best results. Use steam setting for stubborn wrinkles on percale weaves.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-10 h-10 bg-brand/10 rounded-full flex items-center justify-center mr-4 mt-1">
+                            <i class="fa-solid fa-archive text-brand"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold mb-2">Storage</h3>
+                            <p class="text-gray-600">Store in a cool, dry place with good air circulation. Fold loosely or roll to prevent permanent creasing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="aspect-[4/3] bg-surface rounded-3xl overflow-hidden">
+                    <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/280692f75d-ae91355b596c5688b975.png" alt="person folding luxury white cotton sheets, home care and laundry, domestic lifestyle">
+                </div>
+                <div class="absolute -top-6 -right-6 bg-white p-6 rounded-2xl shadow-lg">
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-brand mb-2">10+</div>
+                        <div class="text-sm text-gray-600">Years Lifespan</div>
+                        <div class="text-xs text-gray-500 mt-1">With proper care</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Size Guide -->
+<section id="size-guide" class="py-20 bg-cotton">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-900 mb-6">Size Guide</h2>
+            <p class="text-xl text-gray-600">Find the perfect fit for your mattress and preferences</p>
+        </div>
+        <div class="grid lg:grid-cols-2 gap-12">
+            <div class="bg-white rounded-2xl p-8 shadow-lg">
+                <h3 class="text-2xl font-semibold mb-6">Fitted Sheet Dimensions</h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="border-b border-gray-200">
+                                <th class="text-left py-3 font-semibold">Size</th>
+                                <th class="text-left py-3 font-semibold">Mattress (W×L)</th>
+                                <th class="text-left py-3 font-semibold">Pocket Depth</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-700">
+                            <tr class="border-b border-gray-100">
+                                <td class="py-3 font-medium">Twin</td>
+                                <td class="py-3">39" × 75"</td>
+                                <td class="py-3">15"</td>
+                            </tr>
+                            <tr class="border-b border-gray-100">
+                                <td class="py-3 font-medium">Full</td>
+                                <td class="py-3">54" × 75"</td>
+                                <td class="py-3">15"</td>
+                            </tr>
+                            <tr class="border-b border-gray-100">
+                                <td class="py-3 font-medium">Queen</td>
+                                <td class="py-3">60" × 80"</td>
+                                <td class="py-3">18"</td>
+                            </tr>
+                            <tr class="border-b border-gray-100">
+                                <td class="py-3 font-medium">King</td>
+                                <td class="py-3">76" × 80"</td>
+                                <td class="py-3">18"</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 font-medium">Cal King</td>
+                                <td class="py-3">72" × 84"</td>
+                                <td class="py-3">18"</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl p-8 shadow-lg">
+                <h3 class="text-2xl font-semibold mb-6">Duvet Cover Dimensions</h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="border-b border-gray-200">
+                                <th class="text-left py-3 font-semibold">Size</th>
+                                <th class="text-left py-3 font-semibold">Cover (W×L)</th>
+                                <th class="text-left py-3 font-semibold">Drop Length</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-700">
+                            <tr class="border-b border-gray-100">
+                                <td class="py-3 font-medium">Twin</td>
+                                <td class="py-3">68" × 90"</td>
+                                <td class="py-3">15"</td>
+                            </tr>
+                            <tr class="border-b border-gray-100">
+                                <td class="py-3 font-medium">Full</td>
+                                <td class="py-3">80" × 90"</td>
+                                <td class="py-3">15"</td>
+                            </tr>
+                            <tr class="border-b border-gray-100">
+                                <td class="py-3 font-medium">Queen</td>
+                                <td class="py-3">90" × 90"</td>
+                                <td class="py-3">18"</td>
+                            </tr>
+                            <tr class="border-b border-gray-100">
+                                <td class="py-3 font-medium">King</td>
+                                <td class="py-3">104" × 90"</td>
+                                <td class="py-3">18"</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 font-medium">Cal King</td>
+                                <td class="py-3">104" × 94"</td>
+                                <td class="py-3">18"</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-12">
+            <div class="inline-flex items-center bg-white rounded-lg p-4 shadow-lg">
+                <i class="fa-solid fa-ruler text-brand text-xl mr-3"></i>
+                <span class="text-gray-700">Need help measuring? <button class="text-brand hover:text-brand-light font-medium ml-1">Contact our sizing experts</button></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Shipping & Returns -->
+<section id="shipping-returns" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-900 mb-6">Shipping &amp; Returns</h2>
+            <p class="text-xl text-gray-600">We make it easy to love your new linens</p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="text-center">
+                <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fa-solid fa-truck text-blue-600 text-3xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-4">Free Shipping</h3>
+                <p class="text-gray-600">Free standard shipping on all orders over $150. Express shipping available.</p>
+            </div>
+            <div class="text-center">
+                <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fa-solid fa-undo text-green-600 text-3xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-4">60-Day Returns</h3>
+                <p class="text-gray-600">Try your linens for 60 days. If you're not completely satisfied, return them for a full refund.</p>
+            </div>
+            <div class="text-center">
+                <div class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fa-solid fa-shield-alt text-purple-600 text-3xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-4">Quality Guarantee</h3>
+                <p class="text-gray-600">Every product is backed by our lifetime quality guarantee against manufacturing defects.</p>
+            </div>
+            <div class="text-center">
+                <div class="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fa-solid fa-headset text-orange-600 text-3xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-4">Expert Support</h3>
+                <p class="text-gray-600">Our linen specialists are available 7 days a week to help with any questions.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Newsletter Signup -->
+<section id="newsletter" class="py-20 bg-brand text-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+        <h2 class="text-4xl font-bold mb-6">Stay Connected</h2>
+        <p class="text-xl text-white/90 mb-8">
+            Be the first to know about new collections, exclusive offers, and cotton cultivation updates from our partner farms.
+        </p>
+        <div class="flex flex-col sm:flex-row max-w-md mx-auto gap-4">
+            <input type="email" placeholder="Enter your email address" class="flex-1 px-6 py-4 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-white">
+            <button class="bg-white text-brand px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                Subscribe
+            </button>
+        </div>
+        <p class="text-sm text-white/70 mt-4">
+            We respect your privacy. Unsubscribe at any time.
+        </p>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer id="footer" class="bg-gray-900 text-white py-16">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
+            <div class="lg:col-span-2">
+                <div class="text-2xl font-bold text-white mb-4">Threads by Sovelle</div>
+                <p class="text-gray-400 mb-6 max-w-md">
+                    Premium home linens crafted from the finest African cotton, bringing luxury and sustainability together in perfect harmony.
+                </p>
+                <div class="flex space-x-4">
+                    <i class="fa-brands fa-instagram text-2xl hover:text-white cursor-pointer transition-colors"></i>
+                    <i class="fa-brands fa-facebook text-2xl hover:text-white cursor-pointer transition-colors"></i>
+                    <i class="fa-brands fa-pinterest text-2xl hover:text-white cursor-pointer transition-colors"></i>
+                    <i class="fa-brands fa-youtube text-2xl hover:text-white cursor-pointer transition-colors"></i>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4">Shop</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><span class="hover:text-white transition-colors cursor-pointer">Bedding</span></li>
+                    <li><span class="hover:text-white transition-colors cursor-pointer">Bath</span></li>
+                    <li><span class="hover:text-white transition-colors cursor-pointer">Home Accents</span></li>
+                    <li><span class="hover:text-white transition-colors cursor-pointer">Gift Cards</span></li>
+                    <li><span class="hover:text-white transition-colors cursor-pointer">Sale</span></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4">Support</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><span class="hover:text-white transition-colors cursor-pointer">Size Guide</span></li>
+                    <li><span class="hover:text-white transition-colors cursor-pointer">Care Instructions</span></li>
+                    <li><span class="hover:text-white transition-colors cursor-pointer">Shipping &amp; Returns</span></li>
+                    <li><span class="hover:text-white transition-colors cursor-pointer">FAQ</span></li>
+                    <li><span class="hover:text-white transition-colors cursor-pointer">Contact Us</span></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4">Company</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><span class="hover:text-white transition-colors cursor-pointer">Our Story</span></li>
+                    <li><span class="hover:text-white transition-colors cursor-pointer">Sustainability</span></li>
+                    <li><span class="hover:text-white transition-colors cursor-pointer">Reviews</span></li>
+                    <li><span class="hover:text-white transition-colors cursor-pointer">Careers</span></li>
+                    <li><span class="hover:text-white transition-colors cursor-pointer">A Sovelle Brand</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 mt-12 pt-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-gray-400 text-sm mb-4 md:mb-0">
+                    <p>© 2024 Threads by Sovelle. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-6 text-sm text-gray-400">
+                    <span class="hover:text-white cursor-pointer transition-colors">Privacy Policy</span>
+                    <span class="hover:text-white cursor-pointer transition-colors">Terms of Service</span>
+                    <span class="hover:text-white cursor-pointer transition-colors">Accessibility</span>
+                </div>
+            </div>
+            <div class="text-center mt-6 text-sm text-gray-500">
+                Powered by Africa Trade Engine
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Quick View Modal -->
+<div id="quick-view-modal" class="fixed inset-0 bg-black bg-opacity-50 modal-backdrop hidden z-50 flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+        <div class="grid md:grid-cols-2 gap-8 p-8">
+            <div class="aspect-square bg-surface rounded-2xl overflow-hidden">
+                <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/81ff4c88e0-2f6e3a94b4445ad70466.png" alt="luxury white cotton bed sheets close up detail, premium bedding texture">
+            </div>
+            <div>
+                <div class="flex justify-between items-start mb-4">
+                    <h2 class="text-2xl font-bold">Classic Sheet Set</h2>
+                    <button onclick="closeQuickView()" class="text-gray-500 hover:text-gray-700">
+                        <i class="fa-solid fa-times text-xl"></i>
+                    </button>
+                </div>
+                <div class="flex items-center space-x-4 mb-4">
+                    <div class="flex text-yellow-400">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <span class="text-gray-600">(127 reviews)</span>
+                </div>
+                <div class="text-3xl font-bold text-brand mb-6">$149 - $229</div>
+                <p class="text-gray-600 mb-6">
+                    Experience the luxury of 100% long-staple cotton in our signature percale weave. Crisp, breathable, and designed to get softer with every wash.
+                </p>
+                <div class="space-y-4 mb-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Size</label>
+                        <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand focus:border-brand">
+                            <option>Twin - $149</option>
+                            <option>Full - $169</option>
+                            <option>Queen - $189</option>
+                            <option>King - $229</option>
+                            <option>Cal King - $229</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Color</label>
+                        <div class="flex space-x-3">
+                            <button class="w-8 h-8 bg-white border-2 border-brand rounded-full"></button>
+                            <button class="w-8 h-8 bg-gray-100 border-2 border-gray-300 rounded-full hover:border-brand"></button>
+                            <button class="w-8 h-8 bg-blue-100 border-2 border-gray-300 rounded-full hover:border-brand"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex space-x-4">
+                    <button class="flex-1 bg-brand hover:bg-brand-light text-white py-3 px-6 rounded-lg font-medium transition-colors">
+                        Add to Cart
+                    </button>
+                    <button class="px-6 py-3 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">
+                        <i class="fa-solid fa-heart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function closeQuickView() {
+    document.getElementById('quick-view-modal').classList.add('hidden');
+    document.body.style.overflow = 'auto';
+}
+
+// Close modals when clicking outside
+document.addEventListener('click', function(e) {
+    if (e.target.classList.contains('modal-backdrop')) {
+        closeQuickView();
+    }
+});
+
+// Smooth scrolling for anchor links
+document.addEventListener('DOMContentLoaded', function() {
+    const links = document.querySelectorAll('a[href^="#"]');
+    links.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+});
+
+// Add to cart functionality
+function addToCart(productName, price) {
+    // Add visual feedback
+    const button = event.target;
+    const originalText = button.textContent;
+    button.textContent = 'Added!';
+    button.style.backgroundColor = '#1A7F37';
+    
+    setTimeout(() => {
+        button.textContent = originalText;
+        button.style.backgroundColor = '';
+    }, 2000);
+}
+</script>
+<script defer>
+    // Lazy-load all non-hero images
+    document.querySelectorAll('img').forEach((img) => {
+      if (!img.closest('#hero')) img.loading = 'lazy';
+    });
+    // Give the hero image high priority
+    const heroImg = document.querySelector('#hero img');
+    if (heroImg) heroImg.setAttribute('fetchpriority','high');
+  
+    // Close quick view on ESC
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') document.getElementById('quick-view-modal')?.classList.add('hidden');
+    });
+  </script>
+
+</body></html>
