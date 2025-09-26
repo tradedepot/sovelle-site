@@ -1,0 +1,548 @@
+<html><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <style>
+        ::-webkit-scrollbar { display: none;}
+        * { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; }
+        .glassmorphism { backdrop-filter: blur(10px); background: rgba(242, 240, 239, 0.9); }
+        .pattern-overlay { background-image: radial-gradient(circle at 20% 80%, rgba(147, 130, 72, 0.05) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(147, 130, 72, 0.05) 0%, transparent 50%); }
+        .focus-ring:focus { outline: 2px solid #FF9862; outline-offset: 2px; }
+    </style>
+    <script>tailwind.config = {
+  "theme": {
+    "extend": {
+      "colors": {
+        "pink": "#FF9862",
+        "peach": "#FFCF94",
+        "olive": "#938248",
+        "light-green": "#CBD55E",
+        "off-black": "#1C1C19",
+        "off-white": "#F2F0EF"
+      },
+      "borderRadius": {
+        "xl": "16px",
+        "2xl": "20px"
+      },
+      "fontFamily": {}
+    }
+  }
+};</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"><style>
+  .highlighted-section {
+    outline: 2px solid #3F20FB;
+    background-color: rgba(63, 32, 251, 0.1);
+  }
+
+  .edit-button {
+    position: absolute;
+    z-index: 1000;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  html, body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  </style></head>
+<body class="bg-off-white text-off-black">
+
+<!-- Fixed WhatsApp Button -->
+<div id="whatsapp-float" class="fixed bottom-6 right-6 z-50">
+    <button class="bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full shadow-lg transition-all duration-300 hover:scale-110">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </button>
+</div>
+
+<!-- Header -->
+<header id="header" class="fixed top-0 left-0 right-0 z-40 glassmorphism border-b border-olive/10">
+    <div class="max-w-7xl mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center">
+                <div class="text-2xl font-bold text-olive">Sovelle</div>
+                <div class="ml-2 w-6 h-6 bg-olive rounded opacity-20"></div>
+            </div>
+            <nav class="hidden lg:flex items-center space-x-8">
+                <span class="text-off-black hover:text-olive transition-colors focus-ring rounded-lg px-3 py-2 cursor-pointer">Products</span>
+                <span class="text-off-black hover:text-olive transition-colors focus-ring rounded-lg px-3 py-2 cursor-pointer">About</span>
+                <span class="text-off-black hover:text-olive transition-colors focus-ring rounded-lg px-3 py-2 cursor-pointer">Capabilities</span>
+                <span class="text-off-black hover:text-olive transition-colors focus-ring rounded-lg px-3 py-2 cursor-pointer">Quality</span>
+                <span class="text-off-black hover:text-olive transition-colors focus-ring rounded-lg px-3 py-2 cursor-pointer">Contact</span>
+            </nav>
+            <button onclick="openModal('rqf-modal')" class="bg-olive hover:bg-olive/90 text-off-white px-6 py-2.5 rounded-xl font-medium transition-colors focus-ring">
+                Get a Quote
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section id="about-hero" class="relative h-[600px] overflow-hidden mt-20">
+    <img class="absolute inset-0 w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/6abffaf1d5-348a294f2070b3ac2d07.png" alt="African textile factory workers collaborating, modern industrial setting, cotton processing, warm natural lighting, professional atmosphere">
+    <div class="absolute inset-0 bg-gradient-to-r from-off-black/70 to-off-black/40"></div>
+    <div class="pattern-overlay absolute inset-0"></div>
+    
+    <div class="relative z-10 max-w-7xl mx-auto px-6 h-full flex items-center">
+        <div class="max-w-4xl">
+            <h1 class="text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+                About Sovelle
+            </h1>
+            <p class="text-2xl text-white/90 mb-8 leading-relaxed">
+                Redefining the cotton economy for Africa and beyond.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Mission Section -->
+<section id="mission" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold text-off-black mb-8">Our Mission</h2>
+            <div class="text-lg text-gray-700 leading-relaxed space-y-6">
+                <p>
+                    Sovelle exists to redefine the cotton economy for Africa and beyond. We are building the powerhouse of cotton for the continent, bridging the gap between growing consumer demand and a supply chain powered by Africa's cotton, for Africans, and the world.
+                </p>
+                <p>
+                    From field to finish, Sovelle champions a new standard of quality, transparency, and purpose-driven design. Our ambition isn't just to deliver high-quality end products. We are creating with intention, from scratch—hand-in-hand with our customers—crafting textiles that are not only beautiful and functional but deeply reflective of the lives and environments they serve.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Our Commitments Section -->
+<section id="commitments" class="py-20 bg-off-white">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-off-black mb-4">Our Commitments</h2>
+        </div>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Quality, Production & Practices -->
+            <div class="bg-white rounded-2xl p-8 shadow-lg">
+                <div class="w-16 h-16 bg-olive/10 rounded-xl flex items-center justify-center mb-6">
+                    <i class="fas fa-award text-2xl text-olive"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-off-black mb-4">Quality, Production &amp; Practices</h3>
+                <p class="text-gray-700 leading-relaxed">
+                    We believe in doing it right from the start, from fiber selection to final product. Every Sovelle product is backed by rigorous production standards and meticulous attention to material, touch, durability, and function.
+                </p>
+            </div>
+            
+            <!-- Sustainability & Impact -->
+            <div class="bg-white rounded-2xl p-8 shadow-lg">
+                <div class="w-16 h-16 bg-light-green/20 rounded-xl flex items-center justify-center mb-6">
+                    <i class="fas fa-leaf text-2xl text-light-green"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-off-black mb-4">Sustainability &amp; Impact</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    We are actively building a system that works for people and the planet. Our work promotes:
+                </p>
+                <ul class="text-gray-700 space-y-2">
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-light-green mr-2 mt-1"></i>
+                        <span>Local sourcing &amp; ethical farming</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-light-green mr-2 mt-1"></i>
+                        <span>Low-waste, circular design thinking</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-light-green mr-2 mt-1"></i>
+                        <span>Community-centered production models</span>
+                    </li>
+                </ul>
+                <p class="text-gray-700 leading-relaxed mt-4">
+                    From rural farms to retail shelves, Sovelle is committed to creating real, regenerative impact.
+                </p>
+            </div>
+            
+            <!-- Compliance & Certification -->
+            <div class="bg-white rounded-2xl p-8 shadow-lg">
+                <div class="w-16 h-16 bg-pink/20 rounded-xl flex items-center justify-center mb-6">
+                    <i class="fas fa-certificate text-2xl text-pink"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-off-black mb-4">Compliance &amp; Certification</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    We uphold the highest industry benchmarks through:
+                </p>
+                <ul class="text-gray-700 space-y-2 mb-4">
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-pink mr-2 mt-1"></i>
+                        <span>Global organic &amp; textile certifications</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-pink mr-2 mt-1"></i>
+                        <span>Fair labor practices</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-pink mr-2 mt-1"></i>
+                        <span>Full-chain traceability &amp; accountability</span>
+                    </li>
+                </ul>
+                <p class="text-gray-700 leading-relaxed">
+                    This is more than compliance—it's a promise to every hand that touches our product.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Infrastructure Section -->
+<section id="infrastructure" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-4xl font-bold text-off-black mb-8">Advanced Infrastructure &amp; Distribution</h2>
+                <div class="text-lg text-gray-700 leading-relaxed space-y-6">
+                    <p>
+                        With robust production and distribution capacity across the continent, Sovelle is uniquely positioned to deliver at scale. Our growing network allows us to meet high-volume demand without sacrificing craftsmanship or control.
+                    </p>
+                    <p>
+                        We are as fluent in design thinking as we are in logistics execution, empowering us to serve retailers, hospitality brands, and direct customers across Africa and beyond.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-2 gap-4">
+                <img class="w-full h-48 object-cover rounded-xl" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/2983c2106f-39df1a5d1319c3b6b930.png" alt="modern African textile warehouse, industrial distribution center, organized fabric storage">
+                <img class="w-full h-48 object-cover rounded-xl" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/831c772bf8-09450393b748f7273579.png" alt="textile logistics operation, shipping containers, port facilities in Africa">
+                <img class="w-full h-48 object-cover rounded-xl" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/e92291ce0c-d9182847a6d93ad879ee.png" alt="advanced textile machinery, modern production line, quality control station">
+                <img class="w-full h-48 object-cover rounded-xl" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/dacfd6ceef-8e48a27947c2c775b5bd.png" alt="African textile workers in modern facility, collaborative environment, quality focus">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Vision Section -->
+<section id="vision" class="py-20 bg-gradient-to-r from-olive to-olive/80">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+        <h2 class="text-4xl font-bold text-white mb-8">Our Vision</h2>
+        <p class="text-2xl text-white/90 leading-relaxed">
+            To become the most trusted and transformative textile force in Africa, setting a new global benchmark for African-made quality, collaborative creation, and radical transparency.
+        </p>
+    </div>
+</section>
+
+<!-- Company Policies Section -->
+<section id="policies" class="py-20 bg-off-white">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-off-black mb-4">Company Policies</h2>
+            <p class="text-xl text-gray-600">Our commitment to transparency and ethical business practices</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Quality Policy -->
+            <div id="quality-policy" class="bg-white rounded-2xl p-6 shadow-lg">
+                <div class="w-12 h-12 bg-olive/10 rounded-lg flex items-center justify-center mb-4">
+                    <i class="fas fa-star text-olive"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-off-black mb-3">Quality Policy</h3>
+                <p class="text-gray-600 text-sm mb-4">
+                    Our commitment to maintaining the highest standards in every aspect of production, from raw materials to finished products.
+                </p>
+                <div class="space-y-2 text-sm text-gray-700">
+                    <div class="flex items-start">
+                        <i class="fas fa-check text-olive mr-2 mt-0.5"></i>
+                        <span>ISO quality management systems</span>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-check text-olive mr-2 mt-0.5"></i>
+                        <span>Continuous improvement processes</span>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-check text-olive mr-2 mt-0.5"></i>
+                        <span>Customer satisfaction guarantee</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Anti-corruption -->
+            <div id="anti-corruption" class="bg-white rounded-2xl p-6 shadow-lg">
+                <div class="w-12 h-12 bg-pink/20 rounded-lg flex items-center justify-center mb-4">
+                    <i class="fas fa-shield-alt text-pink"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-off-black mb-3">Anti-corruption</h3>
+                <p class="text-gray-600 text-sm mb-4">
+                    Zero tolerance policy for corruption, bribery, and unethical business practices throughout our operations.
+                </p>
+                <div class="space-y-2 text-sm text-gray-700">
+                    <div class="flex items-start">
+                        <i class="fas fa-check text-pink mr-2 mt-0.5"></i>
+                        <span>Transparent business practices</span>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-check text-pink mr-2 mt-0.5"></i>
+                        <span>Regular compliance audits</span>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-check text-pink mr-2 mt-0.5"></i>
+                        <span>Whistleblower protection</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sanctions -->
+            <div id="sanctions" class="bg-white rounded-2xl p-6 shadow-lg">
+                <div class="w-12 h-12 bg-light-green/20 rounded-lg flex items-center justify-center mb-4">
+                    <i class="fas fa-gavel text-light-green"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-off-black mb-3">Sanctions Compliance</h3>
+                <p class="text-gray-600 text-sm mb-4">
+                    Full compliance with international sanctions and trade regulations to ensure responsible global commerce.
+                </p>
+                <div class="space-y-2 text-sm text-gray-700">
+                    <div class="flex items-start">
+                        <i class="fas fa-check text-light-green mr-2 mt-0.5"></i>
+                        <span>International sanctions screening</span>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-check text-light-green mr-2 mt-0.5"></i>
+                        <span>Trade compliance monitoring</span>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-check text-light-green mr-2 mt-0.5"></i>
+                        <span>Regular policy updates</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Company Info -->
+            <div id="company-info" class="bg-white rounded-2xl p-6 shadow-lg">
+                <div class="w-12 h-12 bg-olive/10 rounded-lg flex items-center justify-center mb-4">
+                    <i class="fas fa-building text-olive"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-off-black mb-3">Company Information</h3>
+                <p class="text-gray-600 text-sm mb-4">
+                    Corporate structure, governance, and key business information for transparency and accountability.
+                </p>
+                <div class="space-y-2 text-sm text-gray-700">
+                    <div class="flex items-start">
+                        <i class="fas fa-check text-olive mr-2 mt-0.5"></i>
+                        <span>Corporate governance framework</span>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-check text-olive mr-2 mt-0.5"></i>
+                        <span>Board composition and oversight</span>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-check text-olive mr-2 mt-0.5"></i>
+                        <span>Annual reporting standards</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact CTA Section -->
+<section id="contact-cta" class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+        <h2 class="text-4xl font-bold text-off-black mb-8">
+            Ready to partner with Sovelle?
+        </h2>
+        <p class="text-xl text-gray-600 mb-8">
+            Join us in redefining the cotton economy for Africa and beyond.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-6 justify-center">
+            <button onclick="openModal('rqf-modal')" class="bg-olive hover:bg-olive/90 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-colors focus-ring">
+                Get a Quote
+            </button>
+            <button onclick="openModal('contact-modal')" class="border-2 border-olive text-olive hover:bg-light-green hover:border-light-green px-8 py-4 rounded-xl font-semibold text-lg transition-colors focus-ring">
+                Contact Us
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer id="footer" class="bg-off-black text-white py-16">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div>
+                <div class="text-2xl font-bold mb-4">Sovelle</div>
+                <p class="text-gray-400 text-sm">Africa Woven. World Proven.</p>
+            </div>
+            
+            <div>
+                <h3 class="font-semibold mb-4">Company</h3>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><span onclick="document.getElementById('quality-policy').scrollIntoView()" class="hover:text-white transition-colors focus-ring rounded px-1 cursor-pointer">Quality Policy</span></li>
+                    <li><span onclick="document.getElementById('anti-corruption').scrollIntoView()" class="hover:text-white transition-colors focus-ring rounded px-1 cursor-pointer">Anti-corruption</span></li>
+                    <li><span onclick="document.getElementById('sanctions').scrollIntoView()" class="hover:text-white transition-colors focus-ring rounded px-1 cursor-pointer">Sanctions</span></li>
+                    <li><span onclick="document.getElementById('company-info').scrollIntoView()" class="hover:text-white transition-colors focus-ring rounded px-1 cursor-pointer">Company Info</span></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h3 class="font-semibold mb-4">Resources</h3>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><span class="hover:text-white transition-colors focus-ring rounded px-1 cursor-pointer">Spec Library</span></li>
+                    <li><span class="hover:text-white transition-colors focus-ring rounded px-1 cursor-pointer">Capability Sheet</span></li>
+                    <li><span class="hover:text-white transition-colors focus-ring rounded px-1 cursor-pointer">Shipping Guide</span></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h3 class="font-semibold mb-4">Contact</h3>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li>info@sovelle.com</li>
+                    <li>+229 XX XX XX XX</li>
+                    <li>Cotonou, Benin</li>
+                </ul>
+                <div class="mt-4">
+                    <span class="text-xs text-gray-500 hover:text-gray-400 transition-colors cursor-pointer">Threads by Sovelle</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="border-t border-gray-800 mt-12 pt-8 text-center text-sm text-gray-500">
+            <p>© 2025 Sovelle. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Modals -->
+<!-- RFQ Modal -->
+<div id="rqf-modal" class="fixed inset-0 bg-black/50 z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+        <div class="p-8">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-2xl font-bold text-off-black">Request a Quote</h2>
+                <button onclick="closeModal('rqf-modal')" class="text-gray-400 hover:text-gray-600 text-2xl focus-ring rounded-lg p-1">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <form class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Company Name</label>
+                        <input type="text" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink focus:border-transparent">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Contact Person</label>
+                        <input type="text" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink focus:border-transparent">
+                    </div>
+                </div>
+                
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                    <input type="email" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink focus:border-transparent">
+                </div>
+                
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Fabric Type</label>
+                    <select class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink focus:border-transparent">
+                        <option>Select fabric type...</option>
+                        <option>Wovens</option>
+                        <option>Knits</option>
+                        <option>Home &amp; Hospitality</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Quantity (meters)</label>
+                    <input type="number" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink focus:border-transparent">
+                </div>
+                
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Additional Requirements</label>
+                    <textarea rows="4" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink focus:border-transparent" placeholder="GSM, width, finishes, delivery timeline..."></textarea>
+                </div>
+                
+                <button type="submit" class="w-full bg-olive hover:bg-olive/90 text-white py-3 rounded-lg font-medium transition-colors focus-ring">
+                    Submit Quote Request
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Modal -->
+<div id="contact-modal" class="fixed inset-0 bg-black/50 z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+        <div class="p-8">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-2xl font-bold text-off-black">Contact Us</h2>
+                <button onclick="closeModal('contact-modal')" class="text-gray-400 hover:text-gray-600 text-2xl focus-ring rounded-lg p-1">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="text-center p-6 border border-gray-200 rounded-xl">
+                        <i class="fas fa-envelope text-3xl text-olive mb-3"></i>
+                        <h3 class="font-semibold text-lg mb-2">Email</h3>
+                        <p class="text-gray-600">info@sovelle.com</p>
+                    </div>
+                    <div class="text-center p-6 border border-gray-200 rounded-xl">
+                        <i class="fas fa-phone text-3xl text-olive mb-3"></i>
+                        <h3 class="font-semibold text-lg mb-2">Phone</h3>
+                        <p class="text-gray-600">+229 XX XX XX XX</p>
+                    </div>
+                </div>
+                
+                <div class="text-center p-6 border border-gray-200 rounded-xl">
+                    <i class="fas fa-map-marker-alt text-3xl text-olive mb-3"></i>
+                    <h3 class="font-semibold text-lg mb-2">Location</h3>
+                    <p class="text-gray-600">Cotonou, Benin</p>
+                </div>
+                
+                <div class="text-center">
+                    <button class="bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-xl font-medium transition-colors focus-ring">
+                        <i class="fab fa-whatsapp mr-2"></i>
+                        WhatsApp Chat
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function openModal(modalId) {
+    document.getElementById(modalId).classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeModal(modalId) {
+    document.getElementById(modalId).classList.add('hidden');
+    document.body.style.overflow = 'auto';
+}
+
+// Close modal when clicking outside
+document.addEventListener('click', function(e) {
+    if (e.target.classList.contains('fixed') && e.target.classList.contains('bg-black/50')) {
+        const modals = document.querySelectorAll('[id$="-modal"]');
+        modals.forEach(modal => {
+            modal.classList.add('hidden');
+        });
+        document.body.style.overflow = 'auto';
+    }
+});
+
+// Close modal with Escape key
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        const modals = document.querySelectorAll('[id$="-modal"]');
+        modals.forEach(modal => {
+            modal.classList.add('hidden');
+        });
+        document.body.style.overflow = 'auto';
+    }
+});
+</script>
+
+
+</body></html>
