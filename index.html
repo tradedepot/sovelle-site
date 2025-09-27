@@ -75,15 +75,23 @@
     <div class="max-w-7xl mx-auto px-6 py-4">
       <div class="flex items-center justify-between">
         <div class="flex items-center">
-          <div class="text-2xl font-bold text-olive">Sovelle</div>
-          <div class="ml-2 w-6 h-6 bg-olive rounded opacity-20"></div>
+          <a href="index.html" aria-label="Sovelle — Home"
+            class="text-2xl font-bold text-olive hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-olive/30 rounded">
+           Sovelle
+          </a>
+          <img
+            src="images/sovelle-icon.png"
+            alt=""
+            class="ml-1 w-3 h-3 inline-block align-baseline select-none pointer-events-none translate-y-[5px]"
+            aria-hidden="true"
+          />
         </div>
         <nav class="hidden lg:flex items-center space-x-8">
           <a href="#products"    class="text-off-black hover:text-olive transition-colors focus-ring rounded-lg px-3 py-2">Products</a>
           <a href="#capabilities" class="text-off-black hover:text-olive transition-colors focus-ring rounded-lg px-3 py-2">Capabilities</a>
           <a href="#quality"     class="text-off-black hover:text-olive transition-colors focus-ring rounded-lg px-3 py-2">Quality</a>
           <a href="#logistics"   class="text-off-black hover:text-olive transition-colors focus-ring rounded-lg px-3 py-2">Logistics</a>
-          <a href="#footer"      class="text-off-black hover:text-olive transition-colors focus-ring rounded-lg px-3 py-2">Contact</a>
+          <a href="about.html"      class="text-off-black hover:text-olive transition-colors focus-ring rounded-lg px-3 py-2">About</a>
         </nav>
         <button onclick="openModal('rfq-modal')" class="bg-olive hover:bg-olive/90 text-off-white px-6 py-2.5 rounded-xl font-medium transition-colors focus-ring">
           Get a Quote
@@ -595,21 +603,28 @@
                 <div class="text-2xl font-bold text-olive mb-4">Sovelle</div>
                 <p class="text-gray-600 mb-4">Premium African textiles for global markets</p>
                 <div class="flex space-x-4">
-                    <span class="text-gray-400 hover:text-olive transition-colors cursor-pointer">
-                        <i class="fa-brands fa-linkedin text-xl"></i>
-                    </span>
-                    <span class="text-gray-400 hover:text-olive transition-colors cursor-pointer">
-                        <i class="fa-brands fa-instagram text-xl"></i>
-                    </span>
+                    <a href="https://www.linkedin.com/company/sovelle-africa/about/"
+                       target="_blank" rel="noopener noreferrer"
+                       aria-label="LinkedIn (opens in a new tab)"
+                       class="text-gray-400 hover:text-olive transition-colors cursor-pointer">
+                      <i class="fa-brands fa-linkedin-in text-xl"></i>
+                    </a>
+
+                    <a href="https://instagram.com/sovelle.africa"
+                       target="_blank" rel="noopener noreferrer"
+                       aria-label="Instagram (opens in a new tab)"
+                       class="text-gray-400 hover:text-olive transition-colors cursor-pointer">
+                      <i class="fa-brands fa-instagram text-xl"></i>
+                    </a>
                 </div>
             </div>
             <div>
                 <h3 class="text-lg font-semibold text-off-black mb-4">Company</h3>
                 <ul class="space-y-2">
-                    <li><span class="text-gray-600 hover:text-olive transition-colors cursor-pointer">Quality Policy</span></li>
-                    <li><span class="text-gray-600 hover:text-olive transition-colors cursor-pointer">Anti-corruption</span></li>
-                    <li><span class="text-gray-600 hover:text-olive transition-colors cursor-pointer">Sanctions</span></li>
-                    <li><a href="threads.html" class="text-gray-600 hover:text-olive transition-colors text-sm cursor-pointer">Threads by Sovelle</a></li>
+                    <li><a href="about.html#mission" class="text-gray-600 hover:text-olive transition-colors cursor-pointer">Mission</a></li>
+                    <li><a href="about.html#commitments" class="text-gray-600 hover:text-olive transition-colors cursor-pointer">Our Commitments</a></li>
+                    <li><a href="about.html#policies" class="text-gray-600 hover:text-olive transition-colors cursor-pointer">Quality Policy</a></li>
+                    <li><a href="threads.html" class="text-gray-600 hover:text-olive transition-colors cursor-pointer">Threads by Sovelle</a></li>
                 </ul>
             </div>
             <div>
@@ -629,7 +644,7 @@
                     </li>
                     <li class="text-gray-600">
                         <i class="fa-solid fa-phone mr-2 text-olive"></i>
-                        +229 21 123 456
+                        +1 628 250 2600
                     </li>
                     <li class="text-gray-600">
                         <i class="fa-solid fa-location-dot mr-2 text-olive"></i>
@@ -963,7 +978,7 @@
               </thead>
               <tbody class="text-gray-700">
                 <tr class="border-b border-gray-100">
-                  <td class="py-3">Sampling (Greige + dye/finish)</td>
+                  <td class="py-3">Sampling</td>
                   <td class="py-3">3 weeks</td>
                 </tr>
                 <tr class="border-b border-gray-100">
@@ -1042,7 +1057,7 @@
               </thead>
               <tbody class="text-gray-700">
                 <tr class="border-b border-gray-100">
-                  <td class="py-3">Sampling (Greige + dye/finish)</td>
+                  <td class="py-3">Sampling</td>
                   <td class="py-3">3 weeks</td>
                 </tr>
                 <tr class="border-b border-gray-100">
@@ -1121,7 +1136,7 @@
               </thead>
               <tbody class="text-gray-700">
                 <tr class="border-b border-gray-100">
-                  <td class="py-3">Sampling (Greige + dye/finish)</td>
+                  <td class="py-3">Sampling</td>
                   <td class="py-3">3 weeks</td>
                 </tr>
                 <tr class="border-b border-gray-100">
@@ -1200,7 +1215,7 @@
               </thead>
               <tbody class="text-gray-700">
                 <tr class="border-b border-gray-100">
-                  <td class="py-3">Sampling (Greige + dye/finish)</td>
+                  <td class="py-3">Sampling</td>
                   <td class="py-3">3 weeks</td>
                 </tr>
                 <tr class="border-b border-gray-100">
