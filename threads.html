@@ -34,7 +34,8 @@
     }
   }
 };</script>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"><style>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap">
+<style>
   .highlighted-section {
     outline: 2px solid #3F20FB;
     background-color: rgba(63, 32, 251, 0.1);
@@ -53,68 +54,88 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
+  /* Add to your <style> block */
+  section { scroll-margin-top: 80px; }
+  @media (min-width: 1024px) { section { scroll-margin-top: 96px; } }
   </style></head>
 <body class="bg-white text-gray-900 antialiased">
 
 <!-- Header -->
 <header id="header" class="sticky top-0 bg-white border-b border-gray-200 z-50">
     <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <div class="flex items-center space-x-8">
-            <div class="flex items-center">
-                <div class="text-2xl font-bold text-brand">Threads</div>
-                <span class="text-lg text-gray-500 ml-1">by Sovelle</span>
-            </div>
-            <nav class="hidden md:flex items-center space-x-8">
-                <a href="#collections" class="text-gray-700 hover:text-brand transition-colors cursor-pointer">Bedding</a>
-                <a href="#collections" class="text-gray-700 hover:text-brand transition-colors cursor-pointer">Bath</a>
-                <a href="#collections" class="text-gray-700 hover:text-brand transition-colors cursor-pointer">Collections</a>
-                <a href="#cotton-story" class="text-gray-700 hover:text-brand transition-colors cursor-pointer">Our Story</a>
-            </nav>
+      <div class="flex items-center space-x-8">
+        <!-- brand -->
+        <div class="flex items-baseline whitespace-nowrap">
+          <div class="text-xl md:text-2xl font-bold text-brand leading-none">Threads</div>
+          <span class="ml-1 text-sm md:text-lg text-gray-500 leading-none">by Sovelle</span>
         </div>
-        <div class="flex items-center space-x-4">
-            <a href="index.html" class="text-sm text-gray-600 hover:text-brand transition-colors cursor-pointer">
-                 The Sovelle Family
-            </a>
-        </div>
+  
+        <nav class="hidden md:flex items-center space-x-8">
+          <a href="#collections" class="text-gray-700 hover:text-brand transition-colors">Bedding</a>
+          <a href="#collections" class="text-gray-700 hover:text-brand transition-colors">Bath</a>
+          <a href="#collections" class="text-gray-700 hover:text-brand transition-colors">Collections</a>
+          <a href="#cotton-story" class="text-gray-700 hover:text-brand transition-colors">Our Story</a>
+        </nav>
+      </div>
+  
+      <div class="flex items-center space-x-4">
+        <!-- hide or shrink on small screens -->
+        <a href="index.html"
+           class="hidden sm:inline text-xs sm:text-sm text-gray-600 hover:text-brand transition-colors">
+          The Sovelle Family
+        </a>
+      </div>
     </div>
-</header>
+  </header>
+    
 
 <!-- Hero Section -->
-<section id="hero" class="relative py-20 text-white overflow-hidden h-[600px]">
-    <div class="absolute inset-0 bg-gradient-to-br from-brand via-brand-light to-brand"></div>
-    <div class="absolute inset-0 fabric-texture"></div>
-    <div class="relative max-w-7xl mx-auto px-6 h-full flex items-center">
-        <div class="grid lg:grid-cols-2 gap-12 items-center w-full">
-            <div>
-                <div class="inline-block bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium mb-6">
-                    From Field to Home
-                </div>
-                <h1 class="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                    Soft. Simple. Thoughtfully made.
-                </h1>
-                <p class="text-xl text-white/90 mb-8 leading-relaxed">
-                    A curated line of 100% cotton beddings and towels—crafted for lasting comfort and effortless style.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <button class="bg-white text-brand px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors">
-                        Explore Collection
-                    </button>
-                    <button class="border-2 border-white text-white hover:bg-white hover:text-brand px-8 py-4 rounded-lg font-semibold text-lg transition-colors">
-                        Learn Our Story
-                    </button>
-                </div>
-            </div>
-            <div class="relative">
-                <div class="aspect-square bg-white/10 backdrop-blur-sm rounded-3xl p-8 flex items-center justify-center">
-                    <img class="w-full h-full object-cover rounded-2xl" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/81ff4c88e0-e381958f7a0c434ad8d9.png" alt="luxury white cotton bed sheets on elegant bed with soft natural lighting, premium home decor, minimalist bedroom">
-                </div>
-                <div class="absolute -bottom-6 -right-6 bg-white text-brand p-4 rounded-2xl shadow-lg">
-                    <div class="text-2xl font-bold">100%</div>
-                    <div class="text-sm">African Cotton</div>
-                </div>
-            </div>
+<section id="hero"
+  class="relative text-white overflow-hidden
+         pt-10 pb-12 sm:pt-12 sm:pb-16 lg:pt-16 lg:pb-20
+         min-h-[420px] sm:min-h-[480px] lg:h-[600px]">
+
+  <div class="absolute inset-0 bg-gradient-to-br from-brand via-brand-light to-brand"></div>
+  <div class="absolute inset-0 fabric-texture"></div>
+
+  <div class="relative max-w-7xl mx-auto px-6 h-full flex items-start lg:items-center">
+    <div class="grid lg:grid-cols-2 gap-10 lg:gap-12 items-center w-full">
+      <div>
+        <div class="inline-block bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium mb-5 sm:mb-6">
+          From Field to Home
         </div>
+
+        <h1 class="text-[56px] lg:text-6xl font-bold mb-6 leading-[1.05] tracking-tight">
+          Soft. Simple. Thoughtfully made.
+        </h1>
+
+        <p class="text-lg sm:text-xl text-white/90 mb-6 sm:mb-8 leading-relaxed max-w-2xl">
+          A curated line of 100% cotton beddings and towels—crafted for lasting comfort and effortless style.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4">
+          <button class="bg-white text-brand px-7 sm:px-8 py-3.5 rounded-lg font-semibold text-base sm:text-lg hover:bg-gray-100 transition-colors">
+            Explore Collection
+          </button>
+          <button class="border-2 border-white text-white hover:bg-white hover:text-brand px-7 sm:px-8 py-3.5 rounded-lg font-semibold text-base sm:text-lg transition-colors">
+            Learn Our Story
+          </button>
+        </div>
+      </div>
+
+      <div class="relative mt-8 lg:mt-0">
+        <div class="aspect-square bg-white/10 backdrop-blur-sm rounded-3xl p-6 sm:p-8 flex items-center justify-center">
+          <img class="w-full h-full object-cover rounded-2xl"
+               src="https://storage.googleapis.com/uxpilot-auth.appspot.com/81ff4c88e0-e381958f7a0c434ad8d9.png"
+               alt="luxury white cotton bed sheets on elegant bed with soft natural lighting, premium home decor, minimalist bedroom">
+        </div>
+        <div class="absolute -bottom-5 -right-5 bg-white text-brand px-4 py-3 rounded-2xl shadow-lg">
+          <div class="text-xl sm:text-2xl font-bold">100%</div>
+          <div class="text-xs sm:text-sm">African Cotton</div>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 
 <!-- Featured Collections -->
